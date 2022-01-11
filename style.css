@@ -1,0 +1,29 @@
+/* Common styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Navigation style */
+nav {
+  background: blue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0 30px;
+}
+.menu img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
