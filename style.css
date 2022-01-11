@@ -2,16 +2,26 @@
 body {
   margin: 0;
   padding: 0;
+  background: rgb(221, 221, 255);
 }
-/* Navigation style */
+/*---------------------- 
+Navigation menu styles
+----------------------- */
 nav {
   background: blue;
   color: white;
   display: flex;
   justify-content: space-between;
 }
+nav .navbox {
+  width: 75%;
+}
 nav .logo {
   display: flex;
+}
+.logo h1 {
+  font-size: 40px;
+  line-height: 0;
 }
 .menu {
   display: flex;
@@ -20,10 +30,32 @@ nav .logo {
 .menu a {
   text-decoration: none;
   color: white;
-  margin: 0 30px;
+  margin: 0 20px;
+  padding: 0 30px;
+  line-height: 65px;
 }
-.menu img {
+.menu a:hover {
+  background-color: #0202df;
+}
+img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+/* ---------
+top_player
+-------- */
+.top_player {
+  background-color: white;
+  max-width: 90%;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.player {
+  display: flex;
+  align-items: center;
 }
