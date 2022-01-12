@@ -48,7 +48,7 @@ top players
 -------- */
 section {
   background-color: white;
-  max-width: 55%;
+  max-width: 800px;
   border-radius: 5px;
   margin: 20px auto;
   padding: 1% 3%;
@@ -103,7 +103,7 @@ top blogs
   justify-content: space-between;
 }
 .course {
-  min-width: 25%;
+  min-width: 28%;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(194, 194, 194);
@@ -134,4 +134,45 @@ footer {
   color: white;
   text-align: center;
   padding: 5px 0;
+}
+
+/* ==================
+@Media min-width & max-width
+=================== */
+
+@media only screen and (max-device-width: 768px) {
+  section {
+    max-width: 740px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course {
+    min-width: 90%;
+  }
+}
+
+/* ----------------Small medias---------------- */
+@media only screen and (max-device-width: 480px) {
+  section {
+    max-width: 450px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course {
+    min-width: 90%;
+  }
 }
