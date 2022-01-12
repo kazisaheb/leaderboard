@@ -37,19 +37,23 @@ nav .logo {
 .menu a:hover {
   background-color: #0202df;
 }
-img {
+.round_img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
 }
 /* ---------
-top_player
+top players
 -------- */
-.top_player {
+section {
   background-color: white;
-  max-width: 90%;
+  max-width: 55%;
   border-radius: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 3%;
+}
+.section_title {
+  color: blue;
 }
 .players {
   display: grid;
@@ -58,4 +62,66 @@ top_player
 .player {
   display: flex;
   align-items: center;
+}
+.player img {
+  margin-right: 20px;
+}
+hr {
+  margin: 20px 0;
+}
+/* --------
+top blogs
+------ */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.blog {
+  display: flex;
+}
+.rect_img {
+  width: 100px;
+  height: 200ps;
+}
+.blog img {
+  margin-right: 20px;
+}
+.blog a {
+  text-decoration: none;
+  color: blue;
+}
+
+/*---------------
+ Latest courses 
+ ---------------------- */
+.latest_courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.course {
+  min-width: 25%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(194, 194, 194);
+}
+.course a {
+  text-decoration: none;
+  color: orangered;
+}
+.course_info {
+  display: flex;
+  justify-content: space-between;
+}
+.course_info {
+  color: gray;
+}
+.course_info span {
+  color: orange;
+}
+.duration {
+  background-color: rgba(255, 68, 0, 0.294);
+  padding: 0 5px;
+  border-radius: 25px;
+  color: orangered;
 }
