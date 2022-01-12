@@ -17,9 +17,6 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-nav .navbox {
-  width: 75%;
-}
 nav .logo {
   display: flex;
 }
@@ -124,8 +121,15 @@ top blogs
   color: orange;
 }
 .duration {
-  background-color: rgba(255, 68, 0, 0.294);
+  background-color: rgba(255, 68, 0, 0.205);
   padding: 0 5px;
   border-radius: 25px;
   color: orangered;
+}
+/* ----------footter----------- */
+footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
 }
